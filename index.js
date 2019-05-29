@@ -62,11 +62,11 @@ function includesNumber(idx, n) {
     return false;
   }
   else {
-    if (idx[idx.length - 1] === n){
+    if (idx[0] === n){
       return true;
     }
     else {
-      idx.pop();
+      idx.shift();
       return includesNumber(idx, n);
     }
   }
