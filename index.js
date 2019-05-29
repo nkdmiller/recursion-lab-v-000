@@ -43,5 +43,5 @@ function addUpTo(idx, n) {
 }
 
 function maxOf(idx) {
-  if
+  if (idx.length )
 }
