@@ -58,12 +58,16 @@ function maxOf(idx) {
 }
 
 function includesNumber(idx, n) {
-  if (idx.length == 0){
+  if (idx.length === 0){
     return false;
   }
   else {
-    if (idx[idx.length - 1){
-      
+    if (idx[idx.length - 1] === n){
+      return true;
+    }
+    else {
+      idx.pop();
+      return includesNumber(idx, n);
     }
   }
 }
