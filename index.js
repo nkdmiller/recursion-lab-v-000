@@ -56,3 +56,14 @@ function maxOf(idx) {
     return idx[0];
   }
 }
+
+function includesNumber(idx, n) {
+  if (idx.length == 0){
+    return false;
+  }
+  else {
+    if (idx[idx.length - 1){
+      
+    }
+  }
+}
