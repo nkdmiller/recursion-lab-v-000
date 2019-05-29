@@ -44,7 +44,7 @@ function addUpTo(idx, n) {
 
 function maxOf(idx) {
   if (idx.length > 1){
-    if(idx[0] > idx[idx.length - 1]){
+    if(idx[0] < idx[idx.length - 1]){
       idx[0] = idx[idx.length - 1];
       idx.pop();
       return maxOf(idx);
