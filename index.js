@@ -47,7 +47,9 @@ function maxOf(idx) {
     if(idx[0] < idx[idx.length - 1]){
       idx[0] = idx[idx.length - 1];
       idx.pop();
-      return(idx);
+      return idx;
     }
   } else {
+    return idx[0];
+  }
 }
